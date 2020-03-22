@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+  }
+
+  /* Clear floats after the columns */
+  .wrap {
+      margin: 10%;
+      max-width: 1200px;
+      width: 90%;
+  }
+
+  .wrap:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 720px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  body {
+    color: #3C3C3C;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight:400;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: #2196f3;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: #2196f3;
+  }
+  
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: underline;
+  }
+
+  .section {
+    margin-bottom: 4%;
+  }
+
+  .description {
+    
+  }
+
+  h1 {
+    margin-bottom: 0;
+    font-weight: inherit;
+  }
+  
+  h2 {
+    font-weight: inherit;
+  }
+  
+  h3 {
+    font-weight: inherit;
+    margin-bottom: 0.3rem;
+  }
+  
+  h4 {
+    font-weight: inherit;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #2196f3;
+  }
+  
+  h5 {
+    font-weight: inherit;
+  }
+  
+  .date {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.2rem;
+  }
+
+  @-webkit-keyframes cf4FadeInOut {
+   0% {
+     opacity:1;
+   }
+   17% {
+     opacity:1;
+   }
+   25% {
+     opacity:0;
+   }
+   92% {
+     opacity:0;
+   }
+   100% {
+     opacity:1;
+   }
+  }
+
+  @-moz-keyframes cf4FadeInOut {
+   0% {
+     opacity:1;
+   }
+   17% {
+     opacity:1;
+   }
+   25% {
+     opacity:0;
+   }
+   92% {
+     opacity:0;
+   }
+   100% {
+     opacity:1;
+   }
+  }
+
+  @-o-keyframes cf4FadeInOut {
+   0% {
+     opacity:1;
+   }
+   17% {
+     opacity:1;
+   }
+   25% {
+     opacity:0;
+   }
+   92% {
+     opacity:0;
+   }
+   100% {
+     opacity:1;
+   }
+  }
+
+  @keyframes cf4FadeInOut {
+   0% {
+     opacity:1;
+   }
+   17% {
+     opacity:1;
+   }
+   25% {
+     opacity:0;
+   }
+   92% {
+     opacity:0;
+   }
+   100% {
+     opacity:1;
+   }
+  }
+
+  #cf4a {
+    position:relative;
+    margin:0 auto;
+  }
+
+  #cf4a img {
+    position:absolute;
+    left:0;
+  }
+
+  .responsive {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+  }
+
+  #cf4a img {
+    -webkit-animation-name: cf4FadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 16s;
+
+    -moz-animation-name: cf4FadeInOut;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 16s;
+
+    -o-animation-name: cf4FadeInOut;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-iteration-count: infinite;
+    -o-animation-duration: 16s;
+
+    animation-name: cf4FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 16s;
+  }
+  #cf4a img:nth-of-type(1) {
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    animation-delay: 12s;
+  }
+  #cf4a img:nth-of-type(2) {
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+    -o-animation-delay: 8s;
+    animation-delay: 8s;
+  }
+  #cf4a img:nth-of-type(3) {
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
+  }
+  #cf4a img:nth-of-type(4) {
+    -webkit-animation-delay: 0;
+    -moz-animation-delay: 0;
+    -o-animation-delay: 0;
+    animation-delay: 0;
+  }
+
+  .shadow {
+    -webkit-box-shadow: 2px 2px 2px #ccc;
+    -moz-box-shadow: 2px 2px 2px #ccc;
+    box-shadow: 2px 2px 2px #ccc;
+    margin-bottom: 10px;
+  }
